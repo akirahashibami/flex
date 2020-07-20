@@ -5,15 +5,71 @@
   list-style: none;
 }
 
-.flex{
-  background-color: #00c7ce;
-  height: 50vh;
-  padding: 10px;
-  margin: 10px;
+header{
+  width: 100%;
+  background-color: #f0f;
 
-  div{
-    background-color: #fff;
-    margin: 5px;
-    font-size: 30px;
+  #header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 20px;
+
+    div{
+      height: 70px;
+      width: 140px;
+      margin: 0 10px;
+      background-color: #ff99ff;
+    }
+
+    :first-child{
+      margin-right: auto;
+    }
+  }
+}
+
+main{
+  #main{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+
+    .main-left{
+      background-color: #9c6;
+      width: 300px;
+    }
+    .main-right{
+      background-color: #3c0;
+      display: flex;
+      padding: 20px;
+      width: 700px;
+      flex-wrap: wrap;
+
+      div{
+        width: 200px;
+        height: 130px;
+        margin: 10px;
+        background-color: #9f0;
+      }
+    }
+  }
+}
+
+footer{
+  #footer{
+    width: 100%;
+    background-color: #69f;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    div{
+      height: 40px;
+      width: 45%;
+      max-width: 600px;
+      background-color: #9cf;
+      margin: 10px;
+    }
   }
 }
